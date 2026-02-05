@@ -1,93 +1,229 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel = "stylesheet" href = "Design.css">
-	<title>Aryan Sanghi</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Aryan Sanghi — Portfolio" />
+	<link rel="stylesheet" href="Design.css" />
+	<title>Aryan Sanghi | Portfolio</title>
 </head>
-<body style="background-color: grey">
 
-	<ul class="nav">
-		<li class="nav"><a class="nav", href="#Home">About</a></li>
-		<li class="nav"><a class="nav", href="#Achievements">Achievements</a></li>
-		<li class="nav"><a class="nav", href="#Projects">Projects</a></li>
-		<li class="nav"><a class="nav", href="#Skills">Skills</a></li>
-		<li class="nav"><a class="nav", href="#Contact">Contact Me</a></li>
-	</ul>
-	<br>
-	<br>
+<body>
+	<header class="site-header" id="top">
+		<nav class="nav" aria-label="Primary">
+			<a class="nav__brand" href="#top">Aryan Sanghi</a>
+			<ul class="nav__links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#publications">Publication</a></li>
+				<li><a href="#problemsetting">Problemsetting</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-	<a id = "Home"></a>
-	<div class="flex-container">
-		<div style="width: 100%"><font size="100">Hi, I am Aryan Sanghi</font><br><font size="5">I am a CSE undergrad at IIT Kharagpur</font></div>
-		<!-- <div style="width: 50%;align-items: center;"><font size="6">I am pursuing Computer Science and Engineering branch</font><br><font size="4">I am a geek and a tech enthusiast. I am quite into competetive programming. I really like hanging out with new people so hey, let's go for a coffee.</font></div> -->
-		<div style="width: 100%"><img src="MyPic.png", width = "600", height = "750", align = "right"></div>
-	</div>
+	<main>
+		<section class="hero" aria-label="Intro">
+			<div class="container hero__inner">
+				<div class="hero__content">
+					<p class="hero__eyebrow">Hi, I’m</p>
+					<h1 class="hero__title">Aryan Sanghi</h1>
+					<p class="hero__subtitle">CSE undergrad at IIT Kharagpur</p>
+					<div class="hero__actions">
+						<a class="button" href="#projects">View Projects</a>
+						<a class="button button--secondary" href="#contact">Get in touch</a>
+					</div>
+				</div>
+				<div class="hero__media">
+					<img
+						class="avatar"
+						src="images/MyPic.png"
+						alt="Portrait of Aryan Sanghi"
+						width="520"
+						height="650"
+						loading="eager"
+					/>
+				</div>
+			</div>
+		</section>
 
-	<a id = "Achievements"></a>
-	<H1>My Achievements</H1>
+		<section class="section" id="about">
+			<div class="container">
+				<h2>About</h2>
+				<p class="lead">
+					I am interested in theoretical computer science and like research and
+					problemsetting.
+				</p>
+				<div class="about-grid">
+					<div class="card">
+						<h3>Interests</h3>
+						<ul class="list">
+							<li>Theoretical computer science</li>
+							<li>Graph theory & combinatorics</li>
+							<li>Algorithmic problem solving</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>Links</h3>
+						<ul class="list">
+							<li>
+								<a href="https://www.linkedin.com/in/aryan-sanghi-1188b025a/" target="_blank" rel="noreferrer">LinkedIn</a>
+							</li>
+							<li>
+								<a href="https://codeforces.com/profile/aryansanghi" target="_blank" rel="noreferrer">Codeforces</a>
+							</li>
+							<li>
+								<a href="https://www.codechef.com/users/aryansanghi" target="_blank" rel="noreferrer">CodeChef</a>
+							</li>
+							<li>
+								<a href="https://github.com/DragmonX" target="_blank" rel="noreferrer">GitHub</a>
+							</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>Gaming</h3>
+						<p class="muted" style="margin: 0; line-height: 1.7;">
+							I’m also into gaming. My most-played games overall are Brawl Stars, Clash Royale,
+							and Clash of Clans. I enjoy RTS games like Age of Empires II: DE and RPG/adventure
+							games like Pokémon, Swordigo, and Assassin’s Creed.
+						</p>
+						<p style="margin: 0.75rem 0 0;">
+							<a class="text-link" href="https://www.youtube.com/@Dragmon1" target="_blank" rel="noreferrer">YouTube: @Dragmon1</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-	<div class="achievements">
-		<div><H2>Competitive Programming</H2></div>
-		<div><H2>Academic Achievements</H2></div>
-		<div>
-			<font style="color:white;text-align: center; font-size:17px;">
-				<a href="https://www.codechef.com/users/aryansanghi", style="color:skyblue;">CodeChef</a> - Highest Rating: 2239<br>
-				<a href="https://codeforces.com/profile/aryansanghi", style="color:skyblue;">Codeforces</a> - Highest Rating: 1690<br>
-				<font style="color:black;text-decoration: underline;">Google CodeJam</font> - 2020 - Qualified Round 1(Rank-1350) and Reached Round 2<br>
-				<font style="color:black;text-decoration: underline;">Google KickStart</font> - Best Rank - 624<br>
-				<font style="color:black;text-decoration: underline;">Olympiads</font> - Qualified ZCO - 2019 & ZIO - 2019<br>
-			</font>
+		<section class="section" id="projects">
+			<div class="container">
+				<h2>Projects</h2>
+				<div class="grid">
+					<article class="project">
+						<a class="project__media" href="https://github.com/DragmonX/Pokemon---The-Game-Of-Masters" target="_blank" rel="noreferrer">
+							<img src="images/Pokemon-gameofmasters.png" alt="Pokemon — The Game of Masters" width="1200" height="740" loading="lazy" />
+						</a>
+						<div class="project__body">
+							<h3 class="project__title">Pokemon — The Game of Masters</h3>
+							<p class="muted">A game project with a complete gameplay loop and polished UI.</p>
+							<a class="text-link" href="https://github.com/DragmonX/Pokemon---The-Game-Of-Masters" target="_blank" rel="noreferrer">View on GitHub</a>
+						</div>
+					</article>
+
+					<article class="project">
+						<a class="project__media" href="https://github.com/DragmonX/PokeTowers-Legends" target="_blank" rel="noreferrer">
+							<img src="images/PokeTowers.png" alt="PokeTowers Legends" width="1200" height="740" loading="lazy" />
+						</a>
+						<div class="project__body">
+							<h3 class="project__title">PokeTowers Legends</h3>
+							<p class="muted">A tower-defense style project built with attention to mechanics and balance.</p>
+							<a class="text-link" href="https://github.com/DragmonX/PokeTowers-Legends" target="_blank" rel="noreferrer">View on GitHub</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="publications">
+			<div class="container">
+				<h2>Publication</h2>
+				<div class="card">
+					<h3 class="pub__title">
+						<a href="https://link.springer.com/chapter/10.1007/978-3-031-83438-7_26" target="_blank" rel="noreferrer">Forbidden Induced Subgraph in Iterative Higher order Line graph</a>
+					</h3>
+					<p class="muted" style="margin: 0.25rem 0 0;">Aryan Sanghi, Devsi Bantva and Sudebkumar Prasant Pal</p>
+					<p class="muted" style="margin: 0.35rem 0 0;">
+						SpringerLink: <a class="text-link" href="https://link.springer.com/chapter/10.1007/978-3-031-83438-7_26" target="_blank" rel="noreferrer">10.1007/978-3-031-83438-7_26</a>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="problemsetting">
+			<div class="container">
+				<h2>Problemsetting</h2>
+				<p class="muted">Placeholders below — you can replace each “Add link” with the final problem URL.</p>
+
+				<div class="stack">
+					<div class="card">
+						<h3>CodeNite 2025 (Codeforces, Unrated)</h3>
+						<ul class="list">
+							<li>B — Permuting the LCM <span class="pill">Add link</span></li>
+							<li>F — Maximizing Line Graph <span class="pill">Add link</span></li>
+						</ul>
+					</div>
+
+					<div class="card">
+						<h3>IICPC Quantfest Regionals — Coding Round (Codeforces, Unrated)</h3>
+						<ul class="list">
+							<li>C — Merge Mayhem <span class="pill">Add link</span></li>
+							<li>D — Autumn Delight <span class="pill">Add link</span></li>
+						</ul>
+					</div>
+
+					<div class="card">
+						<h3>Codeforces Round 1033 (Div. 2) and CodeNite 2025 (Codeforces, Rated)</h3>
+						<ul class="list">
+							<li>A — <a href="https://codeforces.com/contest/2120/problem/A" target="_blank" rel="noreferrer">Square of Rectangles</a></li>
+							<li>B — <a href="https://codeforces.com/contest/2120/problem/B" target="_blank" rel="noreferrer">Square Pool</a></li>
+							<li>D — <a href="https://codeforces.com/contest/2120/problem/D" target="_blank" rel="noreferrer">Matrix Game</a></li>
+							<li>E — <a href="https://codeforces.com/contest/2120/problem/E" target="_blank" rel="noreferrer">Lanes of Cars</a></li>
+							<li>F — <a href="https://codeforces.com/contest/2120/problem/F" target="_blank" rel="noreferrer">Superb Graphs</a></li>
+							<li>G — <a href="https://codeforces.com/contest/2120/problem/G" target="_blank" rel="noreferrer">Eulerian Line Graph</a></li>
+						</ul>
+					</div>
+
+					<div class="card">
+						<h3>CodeNite 2024 (CodeChef, Unrated)</h3>
+						<ul class="list">
+							<li>C — Hammingtons Mayhem <span class="pill">Add link</span></li>
+							<li>F — City Grid <span class="pill">Add link</span></li>
+						</ul>
+					</div>
+
+					<div class="card">
+						<h3>Freshers CodeNite 2024 (HackerRank, Unrated)</h3>
+						<ul class="list">
+							<li>F — Age of trees <span class="pill">Add link</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="contact">
+			<div class="container">
+				<h2>Contact</h2>
+				<div class="contact">
+					<a class="contact__item" href="mailto:aryansanghi2004@gmail.com" aria-label="Email">
+						<img src="images/Gmail-icon.png" alt="Gmail" width="64" height="64" loading="lazy" />
+						<span>Email</span>
+					</a>
+					<a class="contact__item" href="https://www.linkedin.com/in/aryan-sanghi-1188b025a/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+						<img src="images/linkedin.svg" alt="LinkedIn" width="64" height="64" loading="lazy" />
+						<span>LinkedIn</span>
+					</a>
+					<a class="contact__item" href="https://www.instagram.com/aryansanghi11/" target="_blank" rel="noreferrer" aria-label="Instagram">
+						<img src="images/Instagram_icon.png" alt="Instagram" width="64" height="64" loading="lazy" />
+						<span>Instagram</span>
+					</a>
+					<a class="contact__item" href="https://www.facebook.com/people/Aryan-Sanghi/100086674040207/" target="_blank" rel="noreferrer" aria-label="Facebook">
+						<img src="images/Faceboon-icon.png" alt="Facebook" width="64" height="64" loading="lazy" />
+						<span>Facebook</span>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="muted">© <span id="year"></span> Aryan Sanghi</p>
 		</div>
-		<div>
-			<font style="color:white;text-align: center; font-size:17px;">
-				<font style="color:black;text-decoration: underline;">JEE Advanced 2022</font> - AIR: 486<br>
-				<font style="color:black;text-decoration: underline;">JEE Mains 2022</font> -  AIR: 550<br>
-				<font style="color:black;text-decoration: underline;">Olympiads</font> - Qualified NSEC - 2021&2022, NSEA - 2021&2022, NSEP - 2022, NTSE scholar, KVPY SA scholar<br>
-			</font>
-		</div>
-	</div>
+	</footer>
 
-	<br><br><br><br><br>
-
-	<a id = "Projects"></a>
-	<H1>My Projects</H1>
-
-	<div class="proj">
-		<div><a class = "proj", href="https://github.com/DragmonX/Pokemon---The-Game-Of-Masters"><img class = "projimg", src="Pokemon-gameofmasters.png", width = "650", height="400"></a></div>
-		<div><a id = "proj", href="https://github.com/DragmonX/PokeTowers-Legends"><img class = "projimg", src="PokeTowers.png", width = "650", height="400"></a></div>
-	</div>
-
-	<br><br><br><br><br>
-
-	<a id = "Skills"></a>
-	<H1>My Skills</H1>
-
-	<div class="skills">
-		<div> C/C++ </div>
-		<div> Python </div>
-		<div> PyGame </div>
-		<div> Bash </div>
-		<div> GitHub </div>
-		<div> Debating </div>
-		<div> CP </div>
-		<div> Physics </div>
-		<div> Mathematics </div>
-		<div> HTML/CSS </div>
-		<div> Haskell </div>
-	</div>
-
-	<a id = "Contact"></a>
-
-	<br><br><br><br><br>
-
-	<H1>Contact Me</H1>
-
-	<div class="contact">
-		<div><a href="https://www.instagram.com/aryansanghi11/"><img src = "Instagram_icon.png", width="90", height="90"></a></div>
-		<div><a href="https://www.facebook.com/people/Aryan-Sanghi/100086674040207/"><img src = "Faceboon-icon.png", width="90", height="90"></a></div>
-		<div><a href="hhttps://github.com/DragmonX"><img src = "GitHub-icon.png", width="110", height="110"></a></div>
-		<div><a href="mailto:aryansanghi2004@gmail.com"><img src = "Gmail-icon.png", width="110", height="80"></a></div>
-	</div>
-
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
 </body>
 </html>
